@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>تربية الأولاد في الإسلام — Tarbiyat al-Awlad</title>
+<meta name="description" content="منصة تعليمية شاملة مستلهمة من كتاب تربية الأولاد في الإسلام للشيخ عبد الله ناصح علوان">
+<meta name="theme-color" content="#0f1a2e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body class="rtl">
+
+<!-- ═══ SPLASH ═══ -->
+<div class="splash" id="splash" onclick="dismissSplash()">
+  <div class="splash-sacred">
+    <div class="splash-bis">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+    <div class="splash-verse">﴿ وَالَّذِينَ يَقُولُونَ رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا ﴾</div>
+  </div>
+  <div class="splash-inner">
+    <div class="splash-icon">📖</div>
+    <div class="splash-title" id="splash-title">تربية الأولاد</div>
+    <div class="splash-subtitle">Tarbiyat al-Awlad</div>
+    <div class="splash-counter" id="splash-count">3</div>
+    <div class="splash-skip" id="splash-skip">tap to skip</div>
+    <a class="splash-credit" href="https://workshop-diy.org" target="_blank" rel="noopener" onclick="event.stopPropagation()">Powered by workshop-diy.org</a>
+  </div>
+</div>
+
+<!-- ═══ SACRED BAR ═══ -->
+<div class="sacred-bar">
+  <div class="sacred-bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+  <div class="sacred-verse">﴿ وَالَّذِينَ يَقُولُونَ رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا ﴾</div>
+</div>
+
+<!-- ═══ HEADER ═══ -->
+<header class="hdr">
+  <div class="hdr-in">
+    <a href="https://workshop-diy.org" target="_blank" rel="noopener" class="workshop-logo" id="workshopLogo" title="workshop-diy.org"></a>
+    <div class="logo" id="logo">
+      <span class="logo-icon">📖</span>
+      <span class="logo-t" id="logo-text">تربية الأولاد</span>
+    </div>
+    <div class="hdr-r">
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-opt on" data-l="ar" title="عربي"><svg width="20" height="14" viewBox="0 0 30 20"><rect width="15" height="20" fill="#006233"/><rect x="15" width="15" height="20" fill="#fff"/><circle cx="16.5" cy="10" r="5" fill="#D21034"/><circle cx="18" cy="10" r="4" fill="#fff"/><circle cx="17" cy="10" r="4" fill="#006233"/><polygon points="17,6 18,9 21,9 18.5,11 19.5,14 17,12 14.5,14 15.5,11 13,9 16,9" fill="#D21034" transform="scale(0.6) translate(14,7)"/></svg></button>
+        <button class="lang-opt" data-l="en" title="English"><svg width="20" height="14" viewBox="0 0 30 20"><rect width="30" height="20" fill="#012169"/><path d="M0,0L30,20M30,0L0,20" stroke="#fff" stroke-width="3"/><path d="M0,0L30,20M30,0L0,20" stroke="#C8102E" stroke-width="1.5"/><rect x="12" width="6" height="20" fill="#fff"/><rect y="7" width="30" height="6" fill="#fff"/><rect x="13" width="4" height="20" fill="#C8102E"/><rect y="8" width="30" height="4" fill="#C8102E"/></svg></button>
+        <button class="lang-opt" data-l="fr" title="Français"><svg width="20" height="14" viewBox="0 0 30 20"><rect width="10" height="20" fill="#002395"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ED2939"/></svg></button>
+      </div>
+      <button class="theme-btn" id="theme-toggle" title="Theme">🌙</button>
+      <button class="help-btn" id="help-btn" onclick="toggleHelp()" title="Help">?</button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ MAIN ═══ -->
+<main class="main">
+  <div id="s-home" class="sec"></div>
+  <div id="s-about" class="sec on"></div>
+  <div id="s-lessons" class="sec"></div>
+  <div id="s-methods" class="sec"></div>
+  <div id="s-scenarios" class="sec"></div>
+  <div id="s-assess" class="sec"></div>
+  <div id="s-roadmap" class="sec"></div>
+  <div id="s-solver" class="sec"></div>
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="ftr">
+  <p class="powered">Powered by <a href="https://workshop-diy.org" target="_blank" rel="noopener">workshop-diy.org</a></p>
+</footer>
+
+<!-- ═══ BOTTOM TABS ═══ -->
+<nav class="btabs" id="btabs"></nav>
+
+<!-- ═══ FLOATING BUTTONS ═══ -->
+<button class="fab-dua" id="fab-dua" title="Duas">🤲</button>
+<button class="fab-top" id="fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- ═══ TOAST ═══ -->
+<div class="toast" id="toast"></div>
+
+<!-- ═══ DUA MODAL ═══ -->
+<div class="modal-overlay" id="dua-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeDuaModal()">✕</button>
+    <h3 id="dua-modal-title">🤲 أدعية مختارة</h3>
+    <div id="dua-modal-body"></div>
+  </div>
+</div>
+
+<!-- ═══ HELP PANEL ═══ -->
+<div class="help-overlay" id="help-overlay" onclick="toggleHelp()">
+  <div class="help-panel" onclick="event.stopPropagation()">
+    <div class="help-header">
+      <span id="help-title">❓ حول التطبيق</span>
+      <button class="help-close" onclick="toggleHelp()">✕</button>
+    </div>
+    <div class="help-body" id="help-body"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

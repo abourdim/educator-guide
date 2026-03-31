@@ -1,0 +1,19 @@
+{
+  "name": "تربية الأولاد في الإسلام — Tarbiyat al-Awlad",
+  "short_name": "تربية الأولاد",
+  "description": "منصة تعليمية تفاعلية مستلهمة من كتاب تربية الأولاد في الإسلام",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0f1a2e",
+  "theme_color": "#0f1a2e",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["education", "lifestyle"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
