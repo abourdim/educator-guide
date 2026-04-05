@@ -44,6 +44,7 @@ function showToast(msg,ms=2500){
 /* ═══ BISMILLAH GLOW ═══ */
 function glowBismillah(){
   const b=document.getElementById('bismillah');
+  if(!b)return;
   b.classList.add('glow');setTimeout(()=>b.classList.remove('glow'),2000);
 }
 
